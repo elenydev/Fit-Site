@@ -1,0 +1,131 @@
+
+// *,h1,h2,h3,h4,h5,h6,p{
+//     margin:0;
+//     padding:0;
+// }
+// body{
+//     font-family:'Open Sans', sans-serif;
+// }
+
+// .wrapAbout1{
+//     display:flex;
+//     min-height: 70vh;
+//     min-width: 50vw;
+//     align-items: center;
+//     flex-grow: 1;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+// }
+// .wrapAbout2{
+//     display:flex;
+//     min-height: 70vh;
+//     align-items: center;
+//     flex-grow: 1;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;}
+// .whoWeAre{
+//     display:block;
+//     position: relative;
+//     min-height: 10vh;
+//     text-align: center;
+//     max-width: 100%;
+//     font-size:1.2rem;
+//     padding:5%;
+//     letter-spacing: 1px;
+//     text-align: center;
+//     font-weight: 900;
+//     font-family:r;
+// }
+// .whoWeAre::after{
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top:0;
+//     left:0;
+//     right:0;
+//     bottom: 0;
+//     background-image: url(../img/aboutbgc.jpg);
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     z-index: -1;
+//     opacity: 0.7;
+// }
+// .about{
+//     display:flex;
+// }
+// .aboutPerson1a{
+// display: block;
+// background-image: url(../img/pt1.jpg);
+// background-position: center;
+// background-repeat: no-repeat;
+// background-size:cover;
+// background-position-y: 30%;
+
+// min-height: 25vh;
+// min-width:65vw;
+
+// }
+// .aboutPerson1b{
+//  display: block;
+// background-color: rgb(112, 112, 80);
+//  min-height: 25vh;
+// min-width: 65vw;
+
+// }
+// .aboutPerson2a{
+//     display: block;
+//     background-image: url(../img/pt2.jpg);
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size:cover;
+//     background-position-y: 20%;
+//     min-height: 25vh;
+//     min-width:65vw;
+    
+//     }
+//     .aboutPerson2b{
+//      display: block;
+//     background-color: yellow;
+//      min-height: 25vh;
+//     min-width: 65vw;
+    
+//     }
+
+// @media(orientation:landscape){
+//     .wrapAbout1{
+//         max-width:50%;
+//     }
+//     .wrapAbout2{
+//         max-width: 50%;
+//     }
+//     .aboutPerson1a{
+//         min-width:30vw;
+//         min-height: 30vh;
+//     }
+//     .aboutPerson1b{
+//         min-width: 30vw;
+//         min-height: 30vh;
+//     }
+//     .aboutPerson2a{
+//         min-width:30vw;
+//         min-height: 30vh;
+//         background-size:cover;
+//         background-position-y: 30%;
+//     }
+//     .aboutPerson2b{
+//         min-width: 30vw;
+//         min-height: 30vh;
+        
+//     }
+// }
+// @media(orientation:portrait){
+//     .about{
+//         justify-content: space-around;
+//         align-items: center;
+//         flex-wrap: wrap;
+//     }
+// }
