@@ -1093,9 +1093,11 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  color: White;
   letter-spacing: 0.5px;
   font-weight: 900;
   font-size: 1.1rem;
+  text-shadow: 0 0 10px #FFFFFF;
 }
 
 @media (min-width: 600px) and (orientation: portrait) {
