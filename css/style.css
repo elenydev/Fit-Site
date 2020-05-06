@@ -1093,7 +1093,6 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: transparent;
   letter-spacing: 0.5px;
   font-weight: 900;
   font-size: 1.1rem;
