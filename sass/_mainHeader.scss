@@ -1,3 +1,4 @@
+
 *,h1,h2,h3,h4,h5,h6,p,a{
     margin:0;
     padding: 0;
@@ -168,4 +169,176 @@
     }
     .mainHeader a{
         font-size:1.3rem
+    }}
+*,h1,h2,h3,h4,h5,h6,p,a{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;}
+@keyframes opacityMain{
+    0% {
+        opacity:0;
+    
+    }
+    25%{
+        opacity:0.3;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.7;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+.mainHeader{
+    background-image: url(../img/running.jpg);
+    min-height: 100vh;
+    min-width: 100%;
+    max-width: 1980px;
+    max-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color:white;
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 2px;
+    animation: opacityMain 1.5s linear;
+    
+}
+
+.mainHeader h1{
+    text-shadow: 0 0 10px #FFFFFF;
+    margin:0;
+    padding:0;
+}
+.mainHeader .typeText1{
+    padding-top: 5%;
+}
+.mainHeader .typeText2{
+    padding-bottom: 5%;
+}
+.aboutLink{
+    position: absolute;
+    top:-100%;
+    color:transparent;
+    margin:0 auto;
+    background-color:transparent;
+    color:white;
+    font-size:1.2rem;
+    border:2px solid white;
+    border-radius: 50%;
+    padding:10px;
+    font-weight: 900;
+    text-shadow: 0 0 3px #FFFFFF;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.aboutLinkActive{
+    display: block;
+    position: absolute;
+    top:20%;
+    margin:0 auto;
+    background-color:transparent;
+    color:white;
+    font-size:1.2rem;
+    border:2px solid white;
+    border-radius: 90%;
+    padding:10px;
+    font-weight: 900;
+    text-shadow: 0 0 3px #FFFFFF;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 900;
+    
+
+}
+.aboutLinkActive:hover{
+    transform: scale(1.2);
+    text-shadow: 0 0 10px white;
+    cursor:pointer;
+}
+
+
+
+@media (orientation: landscape){
+    .mainHeader{
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    .mainHeader .typeText1{
+        padding-top:1%;
+    }
+    
+}
+@media (orientation:landscape) and (min-width:500px){
+    .mainHeader a{
+        font-size:1rem;
+    }
+}
+@media(min-width:400px){
+    .mainHeader h1{
+        font-size:2.5rem
+    }
+}
+@media (min-width:700px){
+    .mainHeader a{
+        font-size:1.3rem;
+    }
+}
+@media(min-width:1024px){
+    .mainHeader .typeText1  {
+        font-size:3rem;
+        padding-top:2%;
+    }
+    .mainHeader .typeText2{
+        font-size:3rem;
+        padding-bottom: 2%;
+    }
+    .mainHeader a{
+        font-size:2.5rem;
+    }
+    
+}
+@media (orientation:landscape) and (min-width:800px){
+    .mainHeader h1{
+        font-size:1.5rem;
+    }
+    .mainHeader .typeText2{
+        font-size:1.5rem;
+        padding-bottom: 2%;
+    }
+    .mainHeader a{
+        font-size:0.8rem
 }}
+@media (orientation:landscape) and (min-width:800px){
+    .mainHeader h1{
+        font-size:1.5rem;
+    }
+    .mainHeader .typeText2{
+        font-size:1.5rem;
+        padding-bottom: 2%;
+    }
+    .mainHeader a{
+        font-size:0.8rem
+}}
+@media (orientation:landscape) and (min-width:1050px){
+    .mainHeader h1{
+        font-size:1.5rem;
+    }
+    .mainHeader .typeText2{
+        font-size:2rem;
+        padding-bottom: 2%;
+    }
+    .mainHeader a{
+        font-size:1.3rem
+    }
+}
