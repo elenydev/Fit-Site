@@ -1,0 +1,140 @@
+.whyUs{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 62vh;
+    max-width:100%;
+    flex-wrap:wrap;
+    flex-direction: row;
+    margin:0 auto;
+    
+    margin-top:5%;
+    padding-bottom: 5%;
+    
+}
+.whyUsInfo{
+    display: block;
+    min-width: 100%;
+   color:black;
+   text-align:center;
+   padding:3%;
+   letter-spacing: 2px;
+   font-family:'Roboto', sans-serif;
+   font-stretch: inherit;
+   font-weight: 900;
+   font-size:1rem;
+   z-index:5;
+   opacity: 1;
+   
+}
+.whyUs div{
+    display: block;
+    position: relative;
+   min-width: 35%;
+   opacity:1;
+   z-index:5;
+   text-align: center;
+   border-radius: 5%;
+   overflow: hidden;
+   
+}
+.whyUs img{
+    z-index:2;
+    opacity:1;
+}
+.whyUs1{
+background-color: white;
+display: block;
+max-width:60%;
+min-height: 10vh;
+border:1px solid yellowgreen
+}
+.whyUs2{
+    min-height: 20vh;
+    min-width: 30%;
+    max-height: 30vh;
+}
+.whyUs2 img{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.whyUs3{
+   background-color: green;
+   min-height: 20vh;
+   max-width: 30%;
+}
+.whyUs4{
+   display: block;
+   min-width:60%;
+   background-color: white;
+   min-height: 10vh;
+   max-width: 60%;
+   border:1px solid yellowgreen;    
+   
+}
+.whyUs3 img{ position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    vertical-align: middle;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.whyUs span{
+    text-align: center;
+    display:block;
+    padding:10px;
+    color:#A9A9A9;
+    max-height: 50vh;
+    
+    font-size:0.8rem;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+@media(orientation:portrait) and (max-width:400px){
+    .whyUs{
+        min-height: 80vh;
+    }
+}
+@media(orientation:portrait) and (min-width:700px){
+    .whyUs span{
+        font-size:1rem;
+    }
+}
+@media(orientation:portrait) and (min-width:950px){
+    .whyUs span{
+        font-size:1.3rem;
+    }
+}
+@media(orientation:landscape) and (min-width:400px){
+    .whyUs{
+        min-height: 80vh;
+    }
+}
+@media(orientation:landscape) and (min-width:1000px){
+    .whyUs1, .whyUs4{
+        max-width:40%;
+        padding:2%;
+    }
+    .whyUs3, .whyUs2{
+        min-height:40vh;
+    }
+    .whyUs{
+        min-height: 100vh;
+    }
+    .whyUsInfo{
+        font-size: 2.5rem;
+    }
+    .whyUs span{
+        font-size:1.4rem
+    }
+}

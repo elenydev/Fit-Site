@@ -21,6 +21,7 @@ body{
     align-items: center;
     flex-direction: column;
     
+    
 }
 .wrapAbout1:hover{
     background-color: lightgray;
@@ -72,6 +73,7 @@ body{
 .about{
     display:flex;
     justify-content: space-between;
+    padding-bottom: 2%;
 }
 .aboutPerson1a{
 display: block;
@@ -254,7 +256,7 @@ min-width: 65vw;
     box-sizing: border-box;
 }
 body{
-    font-family:'Open Sans', sans-serif;
+    font-family:'Roboto', sans-serif;
 }
 
 .wrapAbout1{
@@ -291,7 +293,7 @@ body{
     letter-spacing: 2px;
     text-align: center;
     font-weight: 900;
-    font-family:sans-serif
+    font-family:'Roboto', sans-serif;
 }
 .whoWeAre::after{
     content: "";
@@ -486,6 +488,16 @@ min-width: 65vw;
     }
     .about{
         margin-top:0%;
+    }
+    .wrapAbout1{
+        min-height: 40vh;
+        max-height: 60vh;
+        padding-top: 5%;
+    }
+    .wrapAbout2{
+           min-height: 40vh;
+           max-height:60vh;
+           padding-top: 5%;
     }
 
 }

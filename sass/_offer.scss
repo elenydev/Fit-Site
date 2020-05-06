@@ -4,7 +4,10 @@
     align-items: center;
     max-width: 100%;
     flex-wrap: wrap;
-    margin-top:7%;
+    padding-top:2%;
+    z-index:-2;
+    background-color:	#FFFAFA
+    
 }
 .offer div{
     
@@ -18,14 +21,21 @@
     border:1px solid lightgray;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.4s;
+    z-index:2;
     
 }
-.offerDesc{
+.offerHead{
     display:block;
     text-align:center;
     letter-spacing: 2px;
-    font-family: sans-serif;
-}   
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size:1.5rem;
+    padding-top: 5%;
+    background-color: 	#FFFAFA;
+} 
+
 
 .offer div:hover{
     h5{
@@ -110,14 +120,24 @@ transform: scale(1.1);
     .offer h5{
         font-size:2rem;
     }
+    .offerHead{
+        font-size:2rem;
+    }
 }
 @media (min-width:900px) and (orientation:portrait){
     .offer h5{
         font-size:2.3rem;
     }
+    .offerHead{
+        font-size:3rem;
+    }
+   
 }
 @media (min-width:900px) and (orientation:landscape){
     .offer h5{
         font-size:2.2rem;
+    }
+    .offerHead{
+        font-size:3rem;
     }
 }
