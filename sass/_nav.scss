@@ -45,3 +45,8 @@ nav a{
     right:0;
     
 }
+@media(orientation:landscape) and (min-width:1100px){
+    .hamburger1{
+        display: none;
+    }
+}
