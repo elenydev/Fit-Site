@@ -1303,7 +1303,62 @@ body {
   }
 }
 
-.nav img {
-  position: relative;
+nav img {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.navMobile {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10%;
+  right: -100%;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #2c3892;
+  z-index: 9;
+  text-align: center;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navMobile ul li {
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  padding: 10%;
+  text-align: center;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.navMobileActive {
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
