@@ -23,7 +23,7 @@ nav a{
     background-color:#2c3892;
     z-index: 9;
     text-align: center;
-    transition: 0.s linear;
+    transition: 0.3s linear;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -46,15 +46,41 @@ nav a{
     
 }
 @media(max-width:1099px){
-.navDesktop{
+nav .navDesktop{
     display: none;
 }}
 @media (orientation:landscape) and (min-width:1100px){
-    .navDekstop{
-        display:block;
+    nav .navDesktop{
+        display: block;
+        position:fixed;
+        top:0;
+        left:0;
+        min-width: 100%;
+        background-color:rgba(22, 27, 0, 0.1);
+        z-index:99;
+        margin:0 auto;
+        
     }
+        
+    .navDesktop li{
+        text-align: center;
+        display: block;
+        min-width: 20%;
+        float:left;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        color:black;
+        font-size:1.4rem;
+        opacity: 1;
+        font-weight: 900;
+       
+        text-shadow: 0 0 5px #FFFFFF;
+        }
+    .navDesktop li:hover{
+        background-color: white;
+    }
+        
     nav .hamburger1{
-        position:absolute;
-        right:-100%;
+        display: none;
     }
 }
