@@ -1309,7 +1309,7 @@ body {
 nav img {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 2%;
   display: block;
   height: 40px;
   width: 40px;
@@ -1320,6 +1320,19 @@ nav img {
   color: black;
   -webkit-animation: opacityMain 1.7s linear;
           animation: opacityMain 1.7s linear;
+}
+
+nav .hamburgerBG {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 nav a {
