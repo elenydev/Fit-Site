@@ -1315,6 +1315,9 @@ nav img {
   width: 40px;
   padding: 4px;
   z-index: 10;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  color: black;
 }
 
 nav a {
@@ -1392,6 +1395,8 @@ nav a {
     background-color: rgba(22, 27, 0, 0.1);
     z-index: 99;
     margin: 0 auto;
+    -webkit-transition: 0.4s linear;
+    transition: 0.4s linear;
   }
   .navDesktop li {
     text-align: center;
