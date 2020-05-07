@@ -1318,6 +1318,8 @@ nav img {
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
   color: black;
+  -webkit-animation: opacityMain 1.7s linear;
+          animation: opacityMain 1.7s linear;
 }
 
 nav a {
@@ -1397,6 +1399,8 @@ nav a {
     margin: 0 auto;
     -webkit-transition: 0.4s linear;
     transition: 0.4s linear;
+    -webkit-animation: opacityMain 1.7s linear;
+            animation: opacityMain 1.7s linear;
   }
   .navDesktop li {
     text-align: center;
@@ -1416,6 +1420,24 @@ nav a {
   }
   nav .hamburger1 {
     display: none;
+  }
+}
+
+@keyframes opacityMain {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

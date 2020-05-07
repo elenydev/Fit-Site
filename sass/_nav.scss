@@ -10,6 +10,7 @@ nav img{
     z-index:10;
     transition: 0.4s linear;
     color:black;
+    animation: opacityMain 1.7s linear;
 }
 nav a{
     text-decoration: none;
@@ -30,6 +31,7 @@ nav a{
     align-items: center;
     justify-content: center;
     position: fixed;
+    
 }
 .navMobile ul li{
     display:block;
@@ -71,6 +73,7 @@ nav .navDesktop{
         z-index:99;
         margin:0 auto;
         transition: 0.4s linear;
+        animation: opacityMain 1.7s linear;
     }
         
     .navDesktop li{
@@ -93,5 +96,23 @@ nav .navDesktop{
         
     nav .hamburger1{
         display: none;
+    }
+}
+@keyframes opacityMain{
+    0% {
+        opacity:0;
+    
+    }
+    25%{
+        opacity:0.3;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.7;
+    }
+    100%{
+        opacity:1;
     }
 }
