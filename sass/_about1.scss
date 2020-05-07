@@ -11,7 +11,7 @@ body{
 
 .wrapAbout1{
     display:flex;
-    min-height: 70vh;
+    min-height: 60vh;
     margin-top: 10%;
     min-width: 50vw;
     align-items: center;
@@ -33,7 +33,7 @@ body{
 }
 .wrapAbout2{
     display:flex;
-    min-height: 70vh;
+    min-height: 60vh;
     align-items: center;
     margin-top: 10%;
     border:1px solid lightgray;
@@ -192,6 +192,16 @@ min-width: 65vw;
         align-items: center;
         flex-wrap: wrap;
     }
+    .wrapAbout1{
+        max-width:80vw;
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+    .wrapAbout2{
+        max-width:80vw;
+        min-height: 60vh;
+        max-height: 60vh;
+    }
 }
 
 @media(orientation:portrait) and (min-width:768px){
@@ -261,7 +271,7 @@ body{
 
 .wrapAbout1{
     display:flex;
-    min-height: 70vh;
+    min-height: 60vh;
     margin-top: 10%;
     min-width: 50vw;
     align-items: center;
@@ -274,7 +284,7 @@ body{
 }
 .wrapAbout2{
     display:flex;
-    min-height: 70vh;
+    min-height: 60vh;
     align-items: center;
     margin-top: 10%;
     border:1px solid lightgray;
@@ -303,7 +313,7 @@ body{
     left:0;
     right:0;
     bottom: 0;
-    background-image: url(../img/aboutbgc.jpg);
+    background-image: url(../img/about2.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
