@@ -1320,8 +1320,7 @@ nav a {
 }
 
 .navMobile {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 10%;
   right: -100%;
   min-width: 100%;
