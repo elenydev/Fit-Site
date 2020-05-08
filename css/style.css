@@ -971,11 +971,13 @@ body {
     min-height: 40vh;
     max-height: 60vh;
     padding-top: 5%;
+    padding-bottom: 2%;
   }
   .wrapAbout2 {
     min-height: 40vh;
     max-height: 60vh;
     padding-top: 5%;
+    padding-bottom: 2%;
   }
 }
 
@@ -1314,7 +1316,7 @@ nav img {
   height: 40px;
   width: 40px;
   padding: 4px;
-  z-index: 10;
+  z-index: 100;
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
   color: black;
@@ -1326,11 +1328,12 @@ nav .hamburgerBG {
   background-color: transparent;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 2%;
   display: block;
   height: 40px;
   width: 40px;
   padding: 4px;
+  z-index: 99;
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
 }

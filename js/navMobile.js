@@ -1,6 +1,8 @@
 const ham=document.querySelector('.hamburger1');
 const menu=document.querySelector('.navMobile');
 const navDesktop=document.querySelector(('.navDesktop'));
+const hamburgerBG=document.querySelector('.hamburgerBG');
+const mainHeader=document.querySelector('.mainHeader').offsetHeight;
 
 ham.addEventListener('click', function(){
     menu.classList.toggle('navMobileActive');
@@ -19,12 +21,22 @@ menuItems.addEventListener('click', function(){
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos && currentScrollPos>mainHeader){
     ham.style.top = "0";
     navDesktop.style.top = "0";
-  } else {
+    hamburgerBG.style.backgroundColor="white";
+    hamburgerBG.style.top="0";
+    navDesktop.style.backgroundColor="white";
+  } 
+  else if(currentScrollPos<=mainHeader){
+    hamburgerBG.style.backgroundColor="transparent";
+    navDesktop.style.backgroundColor="rgba(22, 27, 0, 0.1)";
+  }
+  else {
    ham.style.top = "-50px";
    navDesktop.style.top = "-50px";
+   hamburgerBG.style.top="-50px";
   }
   prevScrollpos = currentScrollPos;
 }
+

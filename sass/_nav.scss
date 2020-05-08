@@ -7,7 +7,7 @@ nav img{
     height:40px;
     width:40px;
     padding: 4px;
-    z-index:10;
+    z-index:100;
     transition: 0.4s linear;
     color:black;
     animation: opacityMain 1.7s linear;
@@ -16,12 +16,12 @@ nav .hamburgerBG{
     background-color:transparent;
     position: fixed;
     top:0;
-    right:0;
+    right:2%;
     display:block;
     height:40px;
     width:40px;
     padding: 4px;
-    
+    z-index: 99;
     transition: 0.4s linear;
 }
 nav a{
