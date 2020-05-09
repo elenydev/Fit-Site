@@ -1142,6 +1142,10 @@ body {
   }
 }
 
+body {
+  background-color: #FFFAFA;
+}
+
 .whyUs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1167,6 +1171,7 @@ body {
   padding-right: 2%;
   margin-top: 5%;
   padding-bottom: 5%;
+  background-color: #FFFAFA;
 }
 
 .whyUsInfo {
