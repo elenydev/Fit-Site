@@ -1456,4 +1456,8 @@ nav a {
     opacity: 1;
   }
 }
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
