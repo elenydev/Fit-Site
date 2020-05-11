@@ -29,7 +29,7 @@ window.onscroll = function() {
     navDesktop.style.backgroundColor="white";
   } 
   else if(currentScrollPos<=mainHeader){
-    hamburgerBG.style.backgroundColor="transparent";
+    hamburgerBG.style.backgroundColor="white";
     navDesktop.style.backgroundColor="rgba(22, 27, 0, 0.1)";
   }
   else {

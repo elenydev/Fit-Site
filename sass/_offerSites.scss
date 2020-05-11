@@ -101,6 +101,9 @@ body{
     transform: scale(1.1)   ;
 
 }
+.offerWrapper2Content{
+    padding:2%;
+}
 .subHeader{
     text-align: center;
     padding:2% 5%;
@@ -111,4 +114,62 @@ body{
 }
 .offerFooter{
     height: 2vh;
+}
+@media(orientation:landscape){
+    .offerWrapper1Img img{
+        width:40%;
+       transform: translate(0,-50%);
+    }
+    .offerWrapper1{
+        align-items: center;
+        justify-content: center;
+    }
+    .offerWrapper2Img img{
+        width:40%;
+        transform: translate(0, -50%);
+        
+    }
+}
+@media(orientation:portrait) and(min-width:600px){
+    .subHeader{
+        margin-top:5%;
+    }
+    .offerWrapper2Content{
+        padding-left: 20%;
+    }
+    @media(orientation:portrait) and(min-width:800px){
+        .subHeader{
+            margin-top:5%;
+        }
+        .offerWrapper2Content{
+            padding-left: 20%;
+            font-size:1.5rem;
+        }
+    }
+    .mainBlock span{
+        font-size:1.5rem;
+    }
+}
+@media(orientation:landscape) and(min-width:600px){
+    .subHeader{
+        margin-top: 5%;
+    }
+}
+@media(orientation:landscape) and (min-width:900px){
+    .offerWrapper2Content{
+        padding-left: 10%;
+    }
+}
+@media(orientation:landscape) and (min-width:1100px){
+    .subHeader{
+        margin-top:3%;
+    }
+}
+@media(orientation:landscape) and(min-width:1600px){
+    .mainBlock{
+        font-size:1.5rem;
+    }
+    .subHeader{
+        margin-top:2.2%;
+    }
 }

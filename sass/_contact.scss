@@ -34,7 +34,7 @@
     text-align: center;
     z-index:1;
 }
-input{
+.contact input{
     display: block;
     border: 1px solid black;
     border-radius:5px;
@@ -47,7 +47,7 @@ input{
     align-self: flex-end;
     justify-self:flex-end;
 }
-form{
+.contactSub{
     
     display: flex;
     flex-wrap: wrap;
@@ -116,8 +116,8 @@ button:hover{
 }
 .contactIcon{
     display:block;
-    width:40%;
-    height:40%;
+    width:30%;
+    height:30%;
     padding-top:20px;
     position: relative;
     padding-right:10px;
@@ -136,14 +136,36 @@ button:hover{
 }
 .contact a{
     z-index:20;
-    width:40%;
-    height:40%;
+    width:30%;
+    height:30%;
+    padding:1%;
+    margin:5%;
 }
 .contactA{
     width:100%;
     height:100%;
 }
-    
+.contactBefore1::before{
+    content:"dczarnotatrener@gmail.com";
+    display:block;
+    position: absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,210%);
+    font-weight: 900;
+
+}
+.contactBefore2::before{
+    content:"514228238";
+    display:block;
+    position: absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,210%);
+    font-weight: 900;
+}
 
 .contactIcon span{
     position: absolute;
@@ -162,7 +184,7 @@ button:hover{
 
 }
 @media(orientation:portrait) and (min-width:750px){
-    input{
+    .contact input{
         font-size:1.2rem;
     }
     .contact h4{
@@ -173,7 +195,7 @@ button:hover{
     }
 }
 @media(orientation:portrait) and (min-width:1000px){
-    input{
+    .contact input{
         font-size:1.5rem;
     }
     .contact h4{
@@ -187,7 +209,7 @@ button:hover{
     .inputEmail{
         margin-top:30px;
     }
-    input{
+    .contact input{
         width:35%;
         margin-left:1%;
     }
@@ -216,7 +238,15 @@ button:hover{
         display:none;
     }
 }
-
+@media(orientation:landscape) and (min-width:350px){
+    .contactBefore1::before{
+        font-size:0.5rem;
+    }
+    .contactBefore2::before{
+        font-size:0.5rem;
+        left:70%;
+    }
+}
 @media(orientation:landscape) and (min-width:660px){
     .contactIcon span{
         font-size:0.7rem;
@@ -224,7 +254,15 @@ button:hover{
     .contactIcon .span2{
         transform: translate(-110%,30%);
     }
+    .contactBefore2::before{
+        font-size:0.5rem;
+        left:50%;
+    }
+    .contactBefore1::before{
+        font-size:0.5rem;
+    }
 }
+
 @media(orientation:landscape) and (min-width:800px){
     .contactIcon span{
         font-size:0.7rem;
@@ -238,6 +276,13 @@ button:hover{
     .contactIcon .span2{
         transform: translate(-110%,30%);
     }
+    .contactBefore2::before{
+        font-size:0.6rem;
+        
+    }
+    .contactBefore1::before{
+        font-size:0.6rem;
+    }
 }
 @media(orientation:landscape) and (min-width:1024px){
     .contactBg{
@@ -245,6 +290,7 @@ button:hover{
     }
     .contactBgDesktop{
         display: block;
+        min-width: 100%;
         
     }
     .contact h4{
@@ -258,6 +304,13 @@ button:hover{
     }
     .contactIcon .span2{
         transform: translate(-100%,30%);
+    }
+    .contactBefore2::before{
+        font-size:0.7rem;
+        
+    }
+    .contactBefore1::before{
+        font-size:0.7rem;
     }
 }
 @media(orientation:landscape) and (min-width:1200px){
@@ -278,11 +331,18 @@ button:hover{
     .contactIcon .span2{
         transform: translate(-140%,30%);
     }
-    input{
+    .contact input{
         font-size:1.2rem;
     }
     button{
         font-size:1.2rem;
+    }
+    .contactBefore2::before{
+        font-size:0.9rem;
+        
+    }
+    .contactBefore1::before{
+        font-size:0.9rem;
     }
 }
 @media(orientation:landscape) and (min-width:1600px){
@@ -295,6 +355,13 @@ button:hover{
     .contactIcon .span2{
         transform: translate(-155%,30%);
     }
+    .contactBefore2::before{
+        font-size:1rem;
+        
+    }
+    .contactBefore1::before{
+        font-size:1rem;
+    }
 }
 @media(orientation:landscape) and (min-width:1750px){
     .contactIcon span{
@@ -305,6 +372,13 @@ button:hover{
     }
     .contactIcon .span2{
         transform: translate(-170%,30%);
+    }
+    .contactBefore2::before{
+        font-size:1.2rem;
+        
+    }
+    .contactBefore1::before{
+        font-size:1.2rem;
     }
 }
 @media(orientation:landscape) and (max-height:319px){
