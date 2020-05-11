@@ -1346,6 +1346,7 @@ nav .hamburgerBG {
   z-index: 99;
   -webkit-transition: 0.4s linear;
   transition: 0.4s linear;
+  border-radius: 10px;
 }
 
 nav a {
@@ -1503,6 +1504,12 @@ nav a {
   }
 }
 
+@media (orientation: landscape) {
+  .navMobile ul li {
+    max-height: 10vh;
+  }
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
@@ -1577,6 +1584,11 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
+}
+
+.contactIcon span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
 .inputEmail {
@@ -1721,16 +1733,21 @@ button:hover {
   }
   input {
     width: 35%;
+    margin-left: 1%;
   }
   .textArea {
     width: 35%;
     min-width: 35%;
     max-width: 35%;
+    margin-left: 1%;
   }
   .contactA {
     position: relative;
     width: 100%;
     height: 100%;
+  }
+  .contact button {
+    margin-left: 1%;
   }
 }
 
@@ -1809,8 +1826,8 @@ button:hover {
             transform: translate(-90%, 30%);
   }
   .contactIcon .span2 {
-    -webkit-transform: translate(-130%, 30%);
-            transform: translate(-130%, 30%);
+    -webkit-transform: translate(-140%, 30%);
+            transform: translate(-140%, 30%);
   }
   input {
     font-size: 1.2rem;
@@ -1829,8 +1846,8 @@ button:hover {
             transform: translate(-90%, 30%);
   }
   .contactIcon .span2 {
-    -webkit-transform: translate(-150%, 30%);
-            transform: translate(-150%, 30%);
+    -webkit-transform: translate(-155%, 30%);
+            transform: translate(-155%, 30%);
   }
 }
 
@@ -1851,6 +1868,141 @@ button:hover {
 @media (orientation: landscape) and (max-height: 319px) {
   .contactWrapper {
     display: none;
+  }
+}
+
+footer {
+  max-height: 25%;
+  padding: 3%;
+  background-color: #414648;
+  -webkit-box-shadow: 0%;
+          box-shadow: 0%;
+}
+
+.mobileFooter {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 30vh;
+  min-height: 30vh;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mobileFooter a {
+  display: block;
+  height: 7vh;
+  width: 7vw;
+  position: relative;
+  padding: 2%;
+  margin: 10%;
+}
+
+.mobileFooter img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.mobileFooter span {
+  display: block;
+  height: 7vh;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.mobileFooter span:last-child {
+  font-size: 0.6rem;
+}
+
+@media (orientation: landscape) {
+  .mobileFooter {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) {
+  .desktopFooter {
+    display: none;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 600px) {
+  .mobileFooter a {
+    margin: 5% 15%;
+  }
+  .mobileFooter span {
+    padding: 5%;
+    width: 50%;
+    text-align: center;
+  }
+  .mobileFooter span:last-child {
+    font-size: 0.7rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 900px) {
+  .mobileFooter span {
+    font-size: 1.5rem;
+  }
+  .mobileFooter span:last-child {
+    font-size: 1.2rem;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 360px) {
+  .mobileFooter span:last-child {
+    min-width: 100%;
+  }
+  .mobileFooter span {
+    padding: 3%;
+    height: 4vh;
+  }
+}
+
+.desktopFooter {
+  color: White;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+  .desktopFooter {
+    font-size: 0.8rem;
+  }
+  footer {
+    padding: 1.5%;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1200px) {
+  .desktopFooter {
+    font-size: 1rem;
+  }
+  footer {
+    max-height: 10vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1500px) {
+  .desktopFooter {
+    font-size: 1.2rem;
+  }
+  footer {
+    max-height: 10vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

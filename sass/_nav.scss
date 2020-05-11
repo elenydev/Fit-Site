@@ -23,6 +23,7 @@ nav .hamburgerBG{
     padding: 4px;
     z-index: 99;
     transition: 0.4s linear;
+    border-radius: 10px;
 }
 nav a{
     text-decoration: none;
@@ -162,5 +163,10 @@ nav .navDesktop{
         
     nav .hamburger1{
         display: none;
+    }
+}
+@media(orientation:landscape){
+    .navMobile ul li{
+        max-height: 10vh;
     }
 }

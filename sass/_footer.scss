@@ -1,0 +1,115 @@
+footer{
+    max-height: 25%;
+    padding:3%;
+    background-color:rgba(65,70,72,1);
+    box-shadow: lightness($color: #000000);
+}
+
+.mobileFooter{
+    display:block;
+    display: flex;
+    max-height: 30vh;
+    min-height: 30vh;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mobileFooter a{
+    display:block;
+    height:7vh;
+    width:7vw;
+    position: relative;
+    padding:2%;
+    margin:10%;
+    
+}
+.mobileFooter img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+.mobileFooter span{
+    display:block;
+    height: 7vh;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.mobileFooter span:last-child{
+    font-size:0.6rem;
+}
+@media(orientation:landscape){
+    .mobileFooter{
+        display: none;
+    }
+}
+@media(orientation:portrait){
+    .desktopFooter{
+        display: none;
+    }
+}
+@media(orientation:portrait) and (min-width:600px){
+    .mobileFooter a{
+        margin:5% 15%;
+    }
+    .mobileFooter span{
+        padding:5%;
+        width:50%;
+        text-align: center;
+    }
+    .mobileFooter span:last-child{
+        font-size:0.7rem;
+    }
+}
+@media(orientation:portrait) and (min-width:900px){
+    .mobileFooter span{
+        font-size:1.5rem;
+    }
+    .mobileFooter span:last-child{
+        font-size:1.2rem;
+    }
+}
+@media(orientation:portrait) and (max-width:360px){
+    .mobileFooter span:last-child{
+        min-width: 100%;
+    }
+    .mobileFooter span{
+        padding: 3%;
+        height:4vh;
+    }
+}
+.desktopFooter{
+    color:White;
+    text-align: center;
+    font-size: 0.7rem;
+}
+@media(orientation:landscape) and (min-width:800px){
+    .desktopFooter{
+        font-size:0.8rem;
+    }
+    footer{
+        padding:1.5%;
+    }
+}
+@media(orientation:landscape) and (min-width:1200px){
+    .desktopFooter{
+        font-size:1rem;
+    }
+    footer{
+        max-height:10vh;
+    }
+}
+@media(orientation:landscape) and (min-width:1500px){
+    .desktopFooter{
+        font-size:1.2rem;
+    }
+    footer{
+        max-height: 10vh
+    }
+}
