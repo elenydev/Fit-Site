@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFAFA;
+}
+.contentOffer{
+    display:block;
+    padding: 2%;
+    
+
+}
+// .mainBlock{
+//     display:flex;
+//     align-content: center;
+//     justify-content: center;
+// }
+.offerWrapper1{
+    display: flex;
+    position: relative;
+    align-content:center;
+    justify-content:center; 
+}
+.offerWrapper2{
+    display: flex;
+    position: relative;
+    align-content:center;
+    justify-content:center;
+}
+.offerWrapper1Img{
+    position: relative;
+    display: block;
+    height:25vh;
+    width:70%;
+    border-radius: 10px;
+}
+.offerWrapper2Img{
+    position: relative;
+    display: block;
+    height: 25vh;
+    width:70%;
+}
+.offerWrapper1Img img{
+    position: absolute;
+    display: block;
+    left:50%;
+    top:50%;
+    transform: translate(-30%, -50%);
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+    margin-top:10px;
+}
+.offerWrapper2Img img{
+    position: absolute;
+    display: block;
+    left:50%;
+    top:50%;
+    transform: translate(-30%, -50%);
+    height:100%;
+    width:100%;
+    border-radius: 10px;
+    margin:10px 0;
+}
+.contentOffer span{
+    display: block;
+    text-align: center;
+    font-weight: 900;
+    padding:10px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    margin:15px;
+}
+.contentOffer ul{
+   margin:15px;
+   letter-spacing: .5px;
+}
+.contentOffer ol{
+    list-style-type: " - ";
+}
+.liTitle{
+    font-weight: 900;
+    list-style-type: none;
+    margin:10px 0;
+}
+.buy{
+    display:block;
+    margin:5px auto;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    border:1px solid white;
+    background-color: yellow;
+    width:40%;
+    border-radius: 20px;
+    font-weight: 900;
+    color:black;
+    transition: .4s linear;
+}
+.buy:hover{
+    background-color: white;
+    transform: scale(1.1)   ;
+
+}
+.subHeader{
+    text-align: center;
+    padding:2% 5%;
+    background-color: black;
+    color:yellow;
+    text-shadow: 0px 0px 10px white;
+    margin-top:10%;
+}
+.offerFooter{
+    height: 2vh;
+}

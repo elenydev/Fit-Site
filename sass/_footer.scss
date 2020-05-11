@@ -1,14 +1,15 @@
 footer{
     max-height: 25%;
+    min-height: 25%;
     padding:3%;
-    background-color:rgba(65,70,72,1);
+    background-color:black;
     box-shadow: lightness($color: #000000);
 }
 
 .mobileFooter{
     display:block;
     display: flex;
-    max-height: 30vh;
+    max-height: 35vh;
     min-height: 30vh;
     align-items: flex-start;
     justify-content: space-around;
@@ -17,7 +18,7 @@ footer{
 
 .mobileFooter a{
     display:block;
-    height:7vh;
+    height:5vh;
     width:7vw;
     position: relative;
     padding:2%;
@@ -34,12 +35,13 @@ footer{
 }
 .mobileFooter span{
     display:block;
-    height: 7vh;
+    height: 3vh;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     letter-spacing: 1px;
     text-align: center;
+    margin:5px;
 }
 .mobileFooter span:last-child{
     font-size:0.6rem;
@@ -75,13 +77,14 @@ footer{
         font-size:1.2rem;
     }
 }
-@media(orientation:portrait) and (max-width:360px){
+@media(orientation:portrait) and (max-width:376px){
     .mobileFooter span:last-child{
         min-width: 100%;
     }
     .mobileFooter span{
-        padding: 3%;
+        padding: 1%;
         height:4vh;
+        margin:5px;
     }
 }
 .desktopFooter{

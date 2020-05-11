@@ -10,7 +10,7 @@
     background-color:	#FFFAFA
     
 }
-.offer div{
+.offer a{
     
     display: block;
     position: relative;
@@ -22,8 +22,8 @@
     border:1px solid lightgray;
     border-radius: 10px;
     overflow: hidden;
-    transition: 0.4s;
-    z-index:2;
+    transition: 0.4s linear;
+    z-index:1;
     
 }
 .offerHead{
@@ -36,9 +36,15 @@
     padding-top: 5%;
     background-color: 	#FFFAFA;
 } 
+.offer a div{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transition: .4s linear;
+}
 
-
-.offer div:hover{
+.offer a:hover{
+    transform: scale(1.1);;
     h5{
         color:white;
         text-shadow: 0 0 10px #FFFFFF;
