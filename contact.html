@@ -36,18 +36,19 @@
 <header class="subHeader"><h1>Kontakt</h1></header>
 <main>
 <section class="contentOfferContact">
+    <h4>I teraz... Jeżeli nasza oferta wydała się dla Ciebie interesująca i sądzisz że współpraca z nami to odpowiedni wybór, napisz do nas!</h4></h1>
     <div class="mainBlocke">
         <div class="contactWrap2"><img src="img/podstrony/contact.jpg"></div>
-    <div class="contactWrap1"><form method="POST" action="" class="contactForm">
-        <input type="text" placeholder="E-mail" class="contactEmail">
-        <textarea cols="5" rows="20" placeholder="Twoja wiadomość"> </textarea>
+    <div class="contactWrap1"><form method="POST" action="email.php" class="contactForm">
+        <input type="text" placeholder="E-mail" class="contactEmail" name='clientMail'>
+        <textarea cols="5" rows="20" placeholder="Twoja wiadomość" name="msgContent"> </textarea>
         <input type="text" placeholder="Imie i nazwisko" class="contactName">
-
+        <input type="submit" value="wyślij" class="buy">
     </form></div>
     
     
 </div>
-<a href="#contact" class="buy">Wyślij</a>
+
 </section>
 </main>
 <footer>

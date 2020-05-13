@@ -110,6 +110,9 @@ nav .navDesktop{
     nav .hamburger1{
         display: none;
     }
+    nav .hamburgerBG{
+        display: none;
+    }
 }
 @keyframes opacityMain{
     0% {
@@ -163,6 +166,9 @@ nav .navDesktop{
         
     nav .hamburger1{
         display: none;
+    }
+    nav .hamburgerBG{
+        display:none;
     }
 }
 @media(orientation:landscape){

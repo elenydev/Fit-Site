@@ -1465,6 +1465,9 @@ nav a {
   nav .hamburger1 {
     display: none;
   }
+  nav .hamburgerBG {
+    display: none;
+  }
 }
 
 @keyframes opacityMain {
@@ -1517,6 +1520,9 @@ nav a {
     background-color: white;
   }
   nav .hamburger1 {
+    display: none;
+  }
+  nav .hamburgerBG {
     display: none;
   }
 }
@@ -2259,6 +2265,9 @@ body {
     -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
   }
+  .buy {
+    width: 20%;
+  }
 }
 
 @media (orientation: portrait) and (min-width: 600px) {
@@ -2356,6 +2365,13 @@ body {
   height: 100%;
 }
 
+.contentOfferContact h4 {
+  display: block;
+  text-align: center;
+  padding: 5% 2%;
+  letter-spacing: 0.5px;
+}
+
 @media (orientation: landscape) {
   .mainBlocke {
     display: -webkit-box;
@@ -2411,6 +2427,13 @@ body {
     max-width: 35%;
     margin: 0;
     padding: 2%;
+  }
+  .contentOfferContact h4 {
+    display: block;
+    text-align: center;
+    padding: 2% 2%;
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
