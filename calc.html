@@ -20,23 +20,31 @@
 
 
 Licze bmi tutaj
-<form>
+
 <input type="number" class="weight">Podaj mase swojego ciała
 <input type="number" class="height">Podaj swój wzrost
 <input type="submit" value="oblicz" class="bmiButton">
-</form>
 <div class="bmi">
 </div>
-<script>
-    
-    const weight=document.querySelector('.weight').value;
-    const ht=document.querySelector('.height').value;
-    const height=ht/100;
-    const bmiDiv=document.querySelector('.bmi');
 
-const bmi=(e)=>{
-    e.prevent.default();
-    const currentBmi=weight/(height*height);
+<input type="number" class="bmrWeight">Podaj mase swojego ciała
+<input type="number" class="bmrHeight">Podaj swój wzrost
+<input type="number" class="bmrAge">Podaj swój wiek
+<select class="bmrSelect">
+    <option>Mężczyzna</option>
+    <option>Kobieta</option>
+</select>
+<input type="submit" value="oblicz" class="bmrButton">
+<div class="bmrDiv"></div>
+
+<script>
+//Bmi
+let bmi=()=>{ 
+    let weight=document.querySelector('.weight').value;
+    let ht=document.querySelector('.height').value;
+    let height=ht/100;
+    let bmiDiv=document.querySelector('.bmi');
+    let currentBmi=Math.round(weight/Math.pow(height,2));
     if(weight <= 0 || height <= 0){
         alert("podane zostały niepoprawne wartośći");
     }
@@ -44,34 +52,52 @@ const bmi=(e)=>{
         bmiDiv.classList.add('activeBmiDiv');
         bmiDiv.style.backgroundColor="red";
         bmiDiv.textContent="Niedowaga";
+        console.log(currentBmi);
 
     }
-    else if(currentBmi>=18.5 || currentBmi<=24.9){
+    else if(currentBmi>=18.5 && currentBmi<=24.9){
         bmiDiv.classList.add('activeBmiDiv');
         bmiDiv.style.backgroundColor="green";
         bmiDiv.textContent="Waga prawidłowa";
+        console.log(currentBmi);
 
     }
-    else if(currentBmi>=25 || currentBmi<=29.9){
+    else if(currentBmi>=25 && currentBmi<=29.9){
         bmiDiv.classList.add('activeBmiDiv');
         bmiDiv.style.backgroundColor="orange";
         bmiDiv.textContent="Nadwaga";
+        console.log(currentBmi);
 
     }
-    else{
+    else if(currentBmi>30){
         bmiDiv.classList.add('activeBmiDiv');
         bmiDiv.style.backgroundColor="red";
         bmiDiv.textContent="Otyłośc";
-
+        console.log(currentBmi);
     }
-
+    
 }
 document.querySelector('.bmiButton').addEventListener('click',bmi);
+//BMR 
+let bmr=()=>{
+let weight=document.querySelector('.bmrWeight').value;
+let height=document.querySelector('.bmrHeight').value;
+let age=document.querySelector('.bmrAge').value;
+let select=document.querySelector('.bmrSelect').value;
+let div=document.querySelector('.bmrDiv');
 
+if(weight<=0 || height<=0 || age<=0) alert("Podane zostały nieprawdiwłowe wartości")
+else if(select=="Mężczyzna"){
+const bmr=((9.99*weight)+(6.25*height)-(4.92*age))+5;
 
+}
+else if(select=="Kobieta"){
+    const bmr=((9.99*weight)+(6.25*height)-(4.92*age))-161;
+    console.log(bmr);
+}
 
-//bmi= masa/wzrost*2
-
+}
+document.querySelector('.bmrButton').addEventListener('click',bmr);
 </script>
 </body>
 </html>
