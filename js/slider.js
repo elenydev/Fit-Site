@@ -1,15 +1,15 @@
 const slideList = [{
-    img: "../img/podstrony/bmi.jpg",
+    img: "img/podstrony/bmi.jpg",
     text: 'BMI',
    
    },
    {
-    img: "../img/podstrony/bmr.jpg",
+    img: "img/podstrony/bmr.jpg",
     text: 'BMR',
     
    },
    {
-    img: "../img/podstrony/bf.jpg",
+    img: "img/podstrony/bf.jpg",
     text: 'BF',
     
    }];
