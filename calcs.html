@@ -35,50 +35,57 @@
 </nav>
 <header class="subHeader"><h1>Kalkulatory</h1></header>
 <main>
-<section class="contentOffer">
-    
-
-<div class="mainBlock">
-    <div class="offerWrapper1>">
-        <div  class="offerWrapper1Img"><img src="img/podstrony/online2.jpg"></div>
-        <div  class="offerWrapper1Content"><span> Jeżeli jesteś chętny/chętna podjęciem ze mną współpracy, natomiast fizycznie nie jesteśmy w stanie się spotkać, pozostaje nam opcja komunikacji drogą mailową bądź wideorozmową. Co mam na myśli? W mojej ofercie znajduje się również współpraca online.
-
-        </span></div>
-    </div>
-    <div class="offerWrapper2>">
-        <div  class="offerWrapper2Img"><img src="img/podstrony/online1.jpg"></div>
-        <div  class="offerWrapper2Content">
-            <ul> 
-                <li class="liTitle">
-                    Współpraca online zawiera:
-                    </li>
-                <ol>
-                <li>Zindywidualizowany plan treningowy</li>
-                <li>Zindywidualizowany plan dietetyczny</li>
-                <li>Zindywidualizowany plan suplementacyjny</li>
-                <li>Tygodniowe raporty</li>
-                <li>Cotygodniowa kontrola postępów i wprowadzanie zmian</li>
-                <li>Stały kontakt 
-                </li>
-            </ol>
-            <li class="liTitle">
-                Współpraca online:
-                </li>
-            <ol>
-            <li>Pierwszy miesiąc - 250zł</li>
-            <li>Każdy kolejny miesiąc współpracy: 200zł</li>
-            <li>Trzy miesiące - 550zł</li>
-            <li>Sześć  miesięcy - 1000zł</li>
-            
-        </ol>
-        
-              
-            </ul>
-
-        </div>
-    </div>
-    <a href="contact.html" class="buy">Zamów</a>
+<section class="contentCalcs">
+<div class="calcs1">
+    <h3>Oblicz swoje BMI</h3>
+    <p><label>Podaj masę swojego ciała w KG <input type="number" class="weight"></label></p>
+    <p><label>Podaj swój wzrost w CM <input type="number" class="height"></label></p>
+    <input type="submit" value="oblicz" class="bmiButton">
+    <div class="bmi"><span class="bmiResult"></span>
 </div>
+
+</div>
+<div class="calcs2">
+    <h3>Oblicz swoje BMR</h3>
+    <p><label>Podaj mase swojego ciała <input type="number" class="bmrWeight"></label></p>
+   <p><label>Podaj swój wzrost <input type="number" class="bmrHeight"></label> </p>
+    <p><label>Podaj swój wiek <input type="number" class="bmrAge"></label></p>
+    <p><label>Wybierz swoja płeć
+    <select class="bmrSelect">
+        <option>Mężczyzna</option>
+        <option>Kobieta</option>
+    </select></p>
+</label>
+<p><label>
+    Wybierz swoja aktywność w ciągu dnia
+    <select class='activitySelect'>
+        <option value="0">Bardzo mała </option>
+        <option value="1">Mała </option>
+        <option value="2">Średnia </option>
+        <option value="3">Duża </option>
+        <option value="4">Bardzo duża </option>
+    </select>
+    </label>
+</p>
+    <input type="submit" value="oblicz" class="bmrButton">
+    <div class="bmrDiv"><span class="bmrResult"></span></div></div>
+<div class="calcs3">
+    <h3>Oblicz swoje Makro</h3>
+    <p><label>Podaj swoją wagę w KG<input type="number" class="macroWeight"></label></p>
+    <p><label>Podaj swój wzrost w CM<input type="number" class="macroHeight"></label></p>
+    <p><label>Podaj ilość kalorii na podstawie której chcesz ustalić makroskładniki<input type="number" class="macroCalories"></label></p>
+    <p><label>Wybierz płeć
+    <select class="macroSex">
+        <option value="0">Mężczyzna</option>
+        <option value="1">Kobieta</option>
+    </select>
+</label></p>
+    <input type="submit" value="oblicz" class="macroButton">
+    <div class="makroDiv"><span class="makroResult"></span></div>
+
+</div>
+
+
 </section>
 </main>
 <footer>
@@ -96,6 +103,7 @@
 <!-- 
 <script src="js/headerText.js"></script> -->
 <script src="js/navigationSub.js"></script>
+<script src="js/calcs.js"></script>
 
 </body>
 </html> 

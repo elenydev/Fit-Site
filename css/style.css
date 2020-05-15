@@ -2580,4 +2580,212 @@ body {
     opacity: 0;
   }
 }
+
+.contentCalcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contentCalcs div {
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+.contentCalcs .calcs1 {
+  display: block;
+  width: 70%;
+  height: 65vh;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.contentCalcs .calcs1 .bmi {
+  display: block;
+  position: relative;
+  margin: 5% auto;
+  width: 100px;
+  height: 15%;
+  font-size: 1rem;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+
+.contentCalcs .calcs1 .bmi .bmiResult {
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.contentCalcs .calcs2 .bmrDiv {
+  display: block;
+  position: relative;
+  margin: 5% auto;
+  width: 100%;
+  height: 15%;
+  font-size: 1rem;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  background-color: transparent;
+}
+
+.contentCalcs .calcs2 .bmrDiv .bmrResult {
+  font-size: 1.05rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: 1%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+.contentCalcs .calcs3 .makroDiv {
+  display: block;
+  position: relative;
+  margin: 5% auto;
+  width: 100%;
+  height: 15%;
+  font-size: 1rem;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  background-color: transparent;
+}
+
+.contentCalcs .calcs3 .makroDiv .makroResult {
+  font-size: 1.05rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+  margin-top: 1%;
+  padding-bottom: 2%;
+  width: 100%;
+}
+
+.contentCalcs p {
+  margin: 3px;
+}
+
+.contentCalcs .calcs2 {
+  display: block;
+  width: 70%;
+  height: 69vh;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.contentCalcs .calcs3 {
+  display: block;
+  width: 70%;
+  height: 65vh;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 30px;
+  padding: 10px;
+}
+
+.contentCalcs h3 {
+  margin-bottom: 25px;
+}
+
+.bmrButton, .bmiButton, .macroButton {
+  background-color: yellow;
+  color: black;
+  padding: 6px;
+  margin-top: 5px;
+  color: black;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+@media (orientation: portrait) and (min-width: 400px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 48vh;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 500px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 37vh;
+    font-size: 1.5rem;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 800px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 30vh;
+    font-size: 1.7rem;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 400px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 92vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 600px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 80vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 700px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 67vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 800px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 75vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 900px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 39vh;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1200px) {
+  .contentCalcs .calcs1, .contentCalcs .calcs2, .contentCalcs .calcs3 {
+    height: 30vh;
+    font-size: 1.35rem;
+  }
+  .contentCalcs .calcs2 .bmrDiv {
+    margin: 1% auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */

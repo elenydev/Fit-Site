@@ -10,7 +10,7 @@ const slideList = [{
    },
    {
     img: "img/podstrony/bf.jpg",
-    text: 'BF',
+    text: 'MAKRO',
     
    }];
    
